@@ -6,6 +6,7 @@ public class ArrayProgram
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};//O(1) intializes the Array
         int length = arr.length;//O(1) returns the length of an array
         int index5 = arr[5];//O(1) returns a value in the array
+        System.out.println(index5);
         printArr(arr);
         System.out.println(indexOf(arr, 7));
         for(int i = 0; i < length; i++)//O(1) returns 
