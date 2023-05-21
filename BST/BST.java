@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package BST;
 public class BST {
     private Node root;
     private int size;
@@ -279,7 +279,6 @@ public class BST {
     
     public Node search(int data)//O(1) a search method that returns the value of the specified data.
     {
-        Node tmp = createNode(data);
         if(searchRecur(this.root, data) == null)
             return null;
         return searchRecur(this.root, data);
@@ -310,7 +309,7 @@ public class BST {
         return getMin(root.left);
     }
     
-    public Integer getMax//O(1) returns the minimum value
+    public Integer getMax()//O(1) returns the minimum value
     {
         if(root == null)
             return null;
@@ -395,7 +394,6 @@ public class BST {
         boolean removed = false;
         if(!this.contains(root))
             return false;
-        int index;
         int[] newArr = new int[this.size];
         for(int i = 0; i < this.size; i++)
         {
